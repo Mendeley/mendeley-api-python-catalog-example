@@ -11,12 +11,12 @@ Authenticated HTTP requests are handled by [Requests](http://docs.python-request
 ## How to run ##
 
 1. Install [Python](https://www.python.org/) and [Pip](https://pip.pypa.io/en/latest/).
-2. Run the following command to install dependencies:
+2. Register your client at the [developer portal](http://dev.mendeley.com).  This will give you a client ID and secret.
+3. Rename the config.yml.example file to config.yml, and fill in your client ID and secret in this file.
+4. Run the following command to install dependencies:
 
         pip install -r requirements.txt
 
-3. Register your client at the [developer portal](http://dev.mendeley.com).  This will give you a client ID and secret.
-4. Set the environment variables MENDELEY_CLIENT_ID and MENDELEY_CLIENT_SECRET to your client ID and secret respectively.
 5. Run the example:
 
 		python mendeley-catalog.py
