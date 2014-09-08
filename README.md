@@ -1,6 +1,8 @@
 # Mendeley API Python Catalog Example #
 
-This is a simple example of an application that consumes the [Mendeley](http://www.mendeley.com) API.  For more information on the API, see the [developer portal](http://dev.mendeley.com).
+This is a simple example of an application that consumes the [Mendeley](http://www.mendeley.com) API, using the [Python SDK](http://mendeley-python.readthedocs.org/).
+
+For more information on the API, see the [developer portal](http://dev.mendeley.com).
 
 ## About the application ##
 
