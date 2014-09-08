@@ -8,8 +8,6 @@ For more information on the API, see the [developer portal](http://dev.mendeley.
 
 The application is a simple command-line script that retrieves the number of Mendeley users that have read a document with a given DOI.  It uses the client credentials flow, meaning that users don't have to log in to Mendeley to use the application.
 
-Authenticated HTTP requests are handled by [Requests](http://docs.python-requests.org/) and [OAuthLib](https://oauthlib.readthedocs.org/).
-
 ## How to run ##
 
 1. Install [Python](https://www.python.org/) and [Pip](https://pip.pypa.io/en/latest/).
