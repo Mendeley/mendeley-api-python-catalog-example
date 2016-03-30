@@ -3,4 +3,13 @@ language: python
 python:
   - "2.7"
 
+sudo: false
+
+# Our testing API key and secret
+# are only accessible on Travis in master branch.
+# So master is the only branch worth testing on Travis.
+branches:
+  only:
+    - master
+
 script: python mendeley-catalog.py
