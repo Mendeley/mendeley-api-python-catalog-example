@@ -28,7 +28,7 @@ Insert your API keys with one of these methods:
 
 Now run the example:
 
-		python mendeley-catalog.py
+		python mendeley-catalog.py [DOI you want to look up]
 
 ## Build status ##
 

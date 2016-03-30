@@ -12,4 +12,5 @@ branches:
   only:
     - master
 
-script: python mendeley-catalog.py
+# Test a catalogue search for a sample DOI
+script: python mendeley-catalog.py 10.1.1.105.1540
