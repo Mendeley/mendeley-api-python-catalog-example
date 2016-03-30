@@ -1,8 +1,17 @@
 from mendeley import Mendeley
 import yaml
+import os
 
-with open('config.yml') as f:
-    config = yaml.load(f)
+config_file = 'config.yml'
+
+config = {}
+
+if os.path.isfile(config_file): 
+    with open('config.yml') as f:
+        config = yaml.load(f)
+else:
+    config['clientId'] = os.environ.get('MENDELEY_CLIENT_ID')
+    config['clientSecret'] = os.environ.get('MENDELEY_CLIENT_SECRET')
 
 mendeley = Mendeley(config['clientId'], config['clientSecret'])
 session = mendeley.start_client_credentials_flow().authenticate()
